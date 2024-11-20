@@ -7,7 +7,7 @@
   background-image:url(images/treasure.gif);
   width:500px;
   height:500px;
-  position:absolute;
+  position:relative;
 }
 
 ul {
@@ -17,4 +17,25 @@ ul {
   position:fixed;
   top:0;
   right:0;
+}
+
+#px300 {
+  position:absolute;
+  right: 30px;
+  bottom: 50px;
+  z-index: 1;
+}
+
+#px200 {
+  position:absolute;
+  z-index: 2;
+  right: 80px;
+  bottom: 90px;
+}
+
+#px100 {
+  position:fixed;
+  z-index: 3;
+  right: 150px;
+  bottom: 150px;
 }
