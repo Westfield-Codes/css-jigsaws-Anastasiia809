@@ -1,4 +1,30 @@
 
+button{
+    width: 200px;
+    height: 50px;
+} 
+
+button:hover {
+    cursor: pointer;
+    transition: background 0.80s;
+}
+
+.button {
+    border: solid 1px;
+    border-color: aquamarine;
+    color: blue;
+    border-radius: 20px;
+}
+.button:hover {
+    background: aquamarine;
+}
+
+.button2 {
+    border: solid 1px;
+    border-color: yellow;
+}
+
+
 
 
 
