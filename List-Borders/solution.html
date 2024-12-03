@@ -12,27 +12,46 @@
       text-align: center;
      }
      
-     ol {
-      text-align: left;
-     }
-
      li {
       display: inline-block;
-      padding: 20px;
      }
 
-     #tables {
-      border-radius: 2px ;
-      border: black;
+     #timestables, #tables ol {
+      border-radius: 20px ;
+      border: 2px solid black;
      }
 
      h4 {
-      color: red;
+      border-bottom: 2px solid red;
      }
 
-     #bottom {
-      
+     li ol:hover {
+      background: black;
+      color: white;
      }
+
+     li ol {
+      padding: 20px;
+     }
+
+     li ol {
+      margin-bottom: 20px;
+     }
+     
+     li {
+      margin-top: 20px;
+     }
+     
+     li li {
+      margin-top: 0;
+      text-align: left;
+      margin-left: -20px;
+     }
+
+     #tables { 
+      text-align: center;
+     }
+
     /* Left-align each of the equations */
 
     /* Display each table in a row with inline-block */
@@ -102,7 +121,7 @@
       </li>
       <li>
       <ol>
-        <div id="bottom"></div><li><h4>10</h4>
+        <li><h4>10</h4>
         <li>10 X 7 = 70</li>
         <li>10 X 8 = 80</li>
         <li>10 X 9 = 90</li>
