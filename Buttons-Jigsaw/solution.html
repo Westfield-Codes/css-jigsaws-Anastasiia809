@@ -20,11 +20,13 @@ button:hover {
 .button {
     border: solid 1px;
     border-color: aquamarine;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .button:hover {
     background: aquamarine;
     transition: background 0.60s;
+    color: white;
+    transition: color 0.40s;
 }
 
 .button2:hover {
@@ -37,18 +39,23 @@ button:hover {
 }
 
 .button2 span {
-  position: relative;
-  transition: 0.5s;
+   position: relative;
+    transition: 0.5s; 
+}
+    
+.button2 span::after {
+  content: '\00bb'; 
+  position: absolute; 
+  opacity: 0;
+  top: 0; 
+  right: -20px; 
+  transition: 0.5s; 
+} 
+ .button2:hover span:after { 
+  opacity: 1; 
+  right: 0; 
 }
 
-.button2 span::after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  transition: 0.5s;
-  top: 0;
-  right: -20px;
-}
 
 .button3 {
   box-shadow: 0 9px rgb(60, 97, 12);
@@ -56,15 +63,13 @@ button:hover {
   background: rgb(118, 197, 14);
 }
 
-.button3:hover {
-  background: #46921b;
-}
 
 .button3:active {
   box-shadow: 0 5px #1f4b0b;
   transform: translateY(4px);
   background: #3b7e17;
 }  
+
 
   </style>
 </head>
