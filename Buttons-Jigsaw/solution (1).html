@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Styling Buttons - Solution</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <style>
+button{
+    width: 150px;
+    height: 75px;
+} 
+
+button:hover {
+    cursor: pointer;
+}
+
+.button {
+    border: solid 1px;
+    border-color: aquamarine;
+    border-radius: 10px;
+}
+.button:hover {
+    background: aquamarine;
+    transition: background 0.60s;
+    color: white;
+    transition: color 0.40s;
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(180, 17, 17, 0.644),0 17px 50px 0 rgba(216, 3, 3, 0.884);
+}
+
+.button2 {
+    background: rgba(180, 17, 17, 0.644);
+    border-color: rgba(214, 111, 111, 0.644);
+}
+
+.button2 span {
+   position: relative;
+    transition: 0.5s; 
+}
+    
+.button2 span::after {
+  content: '\00bb'; 
+  position: absolute; 
+  opacity: 0;
+  top: 0; 
+  right: -20px; 
+  transition: 0.5s; 
+} 
+ .button2:hover span:after { 
+  opacity: 1; 
+  right: 0; 
+}
+
+
+.button3 {
+  box-shadow: 0 9px rgb(60, 97, 12);
+  border-radius: 25px;
+  background: rgb(118, 197, 14);
+}
+
+
+.button3:active {
+  box-shadow: 0 5px #1f4b0b;
+  transform: translateY(4px);
+  background: #3b7e17;
+}  
+
+
+  </style>
+</head>
+
+
+
+<body>
+  <div id="project">
+    <h1>Styling Buttons - Solution</h1>
+    <h3>Buttons</h3>
+    <ul>
+      <li><a href="https://www.w3schools.com/css/css3_buttons.asp">W3Schools Page</a></li>
+      <li><a href="index.html">Project</a></li>
+    </ul>
+  </div>
+  <button class="button">Button 1</button>
+  <button class="button2" style="vertical-align:middle"><span>Button 2</span></button2>
+  <button class="button3">Button 3</button3>
+  <footer><a href="../index.html">Back Home</a></footer>
+
+
+
+</body>
+</html>
