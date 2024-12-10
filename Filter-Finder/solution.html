@@ -9,23 +9,32 @@
       <style>
 
         /* default states section (no css here)  */
-        
+      
         /* show the image */
-        
-
-        /* hide the in/out messages*/
       
 
-        /* grayscale filter the out images */
+        /* hide the in/out messages*/
+       .middle {
+         display: none;
+       }
 
+
+        /* grayscale filter the out images */
+      .out {
+         filter: grayscale(100%);
+      }
         
         /* hover states section (no css here) */
-
+       
         /* gray-out the images */
-  
+       img:hover {
+         filter: opacity(30%);
+       }
         
         /* show the status message */
-  
+       .image:hover + .middle {
+         display: block;
+       }
 
       </style>
    </head>
