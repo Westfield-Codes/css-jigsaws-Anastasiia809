@@ -10,7 +10,28 @@
   <style>
     
 /* gradients */
-  
+  .circle #regular {
+    height: 200px;
+    width: 200px;
+    background-image: conic-gradient(red, yellow, green, blue,magenta, red);
+    border-radius: 50%;
+  }
+
+  .circle #pastel {
+    height: 200px;
+    width: 200px;
+    background-image: conic-gradient(#ff9966, rgb(204, 153, 255), lightgreen, lightblue,pink,#ff9999);
+    border-radius: 50%;
+  }
+
+  .circle #grayscale {
+    height: 200px;
+    width: 200px;
+    background-image: conic-gradient(black,darkgrey, grey, lightgrey,rgb(204, 204, 204));
+    border-radius: 50%;
+  }
+
+
   </style>
 </head>
 
@@ -26,7 +47,7 @@
     </div>
 
     <div class="circle">
-      <div class="circl">
+      <div class="circle">
         <div id="pastel"></div>
       </div>
     </div>
